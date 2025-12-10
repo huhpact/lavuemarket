@@ -1,1 +1,408 @@
-hi
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LaVue Market - Your premier destination for real-time stock market data, financial news, and investment insights. Track the top US stocks live.">
+    <meta name="keywords" content="stock market, financial news, live stock prices, investment, trading, market analysis, US stocks">
+    <meta name="author" content="LaVue Market">
+    <meta property="og:title" content="LaVue Market - Professional Financial Portal">
+    <meta property="og:description" content="Get real-time stock market data and professional financial insights">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lavuemarket.eu">
+    <title>LaVue Market - Professional Financial Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/index.css">
+    <script type="module" src="https://unpkg.com/lucide@latest/dist/esm/icons/menu.js"></script>
+    <script type="module" src="https://unpkg.com/lucide@latest/dist/esm/icons/x.js"></script>
+    <script type="module" src="https://unpkg.com/lucide@latest/dist/esm/icons/trending-up.js"></script>
+    <script type="module" src="https://unpkg.com/lucide@latest/dist/esm/icons/trending-down.js"></script>
+    <script type="module" src="https://unpkg.com/lucide@latest/dist/esm/icons/arrow-right.js"></script>
+    <script type="module" src="https://unpkg.com/lucide@latest/dist/esm/icons/clock.js"></script>
+    <script type="module" src="https://unpkg.com/lucide@latest/dist/esm/icons/user.js"></script>
+    <script type="module" src="https://unpkg.com/lucide@latest/dist/esm/icons/mail.js"></script>
+    <script type="module" src="https://unpkg.com/lucide@latest/dist/esm/icons/phone.js"></script>
+    <script type="module" src="https://unpkg.com/lucide@latest/dist/esm/icons/map-pin.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1>LaVue Market</h1>
+                </div>
+                <nav class="nav">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#articles" class="nav-link">Articles</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+                <button class="mobile-toggle">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section id="home" class="page active">
+            <div class="hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Real-Time Financial Intelligence</h1>
+                        <p class="hero-subtitle">Track market movements, analyze trends, and make informed investment decisions with our professional-grade financial platform.</p>
+                        <button class="cta-button">Get Market Insights <i data-lucide="arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="market-overview">
+                <div class="container">
+                    <h2 class="section-title">Live Market Data</h2>
+                    <div class="stocks-grid" id="stocksGrid">
+                        <div class="loading">Loading market data...</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="latest-articles">
+                <div class="container">
+                    <h2 class="section-title">Latest Financial Insights</h2>
+                    <div class="articles-grid">
+                        <article class="article-card">
+                            <div class="article-image">
+                                <img src="https://images.pexels.com/photos/6801874/pexels-photo-6801874.jpeg" alt="Market Analysis">
+                            </div>
+                            <div class="article-content">
+                                <div class="article-meta">
+                                    <span class="article-date"><i data-lucide="clock"></i> 2 hours ago</span>
+                                    <span class="article-author"><i data-lucide="user"></i> Sarah Johnson</span>
+                                </div>
+                                <h3 class="article-title">Federal Reserve Signals Potential Rate Changes</h3>
+                                <p class="article-excerpt">Comprehensive analysis of the latest Federal Reserve meeting and its implications for the financial markets...</p>
+                                <a href="#article/1" class="article-link">Read Full Analysis <i data-lucide="arrow-right"></i></a>
+                            </div>
+                        </article>
+                        <article class="article-card">
+                            <div class="article-image">
+                                <img src="https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg" alt="Tech Stocks">
+                            </div>
+                            <div class="article-content">
+                                <div class="article-meta">
+                                    <span class="article-date"><i data-lucide="clock"></i> 4 hours ago</span>
+                                    <span class="article-author"><i data-lucide="user"></i> Michael Chen</span>
+                                </div>
+                                <h3 class="article-title">Technology Sector Outlook for Q4</h3>
+                                <p class="article-excerpt">In-depth examination of emerging trends in the technology sector and investment opportunities...</p>
+                                <a href="#article/2" class="article-link">Read Analysis <i data-lucide="arrow-right"></i></a>
+                            </div>
+                        </article>
+                        <article class="article-card">
+                            <div class="article-image">
+                                <img src="https://images.pexels.com/photos/6801647/pexels-photo-6801647.jpeg" alt="Economic Data">
+                            </div>
+                            <div class="article-content">
+                                <div class="article-meta">
+                                    <span class="article-date"><i data-lucide="clock"></i> 6 hours ago</span>
+                                    <span class="article-author"><i data-lucide="user"></i> David Rodriguez</span>
+                                </div>
+                                <h3 class="article-title">Global Economic Indicators Update</h3>
+                                <p class="article-excerpt">Weekly roundup of key economic indicators and their impact on global financial markets...</p>
+                                <a href="#article/3" class="article-link">Read Report <i data-lucide="arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="articles" class="page">
+            <div class="container">
+                <h1 class="page-title">Financial Articles & Analysis</h1>
+                <div class="articles-list">
+                    <article class="article-preview">
+                        <div class="article-image">
+                            <img src="https://images.pexels.com/photos/6801872/pexels-photo-6801872.jpeg" alt="Market Trends">
+                        </div>
+                        <div class="article-info">
+                            <div class="article-meta">
+                                <span class="article-date">March 15, 2025</span>
+                                <span class="article-category">Market Analysis</span>
+                            </div>
+                            <h2 class="article-title">Federal Reserve Policy Impact on Markets</h2>
+                            <p class="article-excerpt">Detailed analysis of recent Federal Reserve decisions and their comprehensive impact on various market sectors...</p>
+                            <a href="#article/1" class="read-more">Read Full Article</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="article" class="page article-page">
+            <div class="container">
+                <article class="full-article">
+                    <header class="article-header">
+                        <div class="article-meta-full">
+                            <span class="category">Market Analysis</span>
+                            <time class="publish-date">March 15, 2025</time>
+                        </div>
+                        <h1 class="article-title-full">Federal Reserve Policy Changes: Comprehensive Market Impact Analysis</h1>
+                        <div class="author-info">
+                            <div class="author-avatar">
+                                <img src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg" alt="Sarah Johnson">
+                            </div>
+                            <div class="author-details">
+                                <span class="author-name">Sarah Johnson</span>
+                                <span class="author-title">Senior Market Analyst</span>
+                            </div>
+                        </div>
+                    </header>
+
+                    <div class="article-content-full">
+                        <div class="hero-image">
+                            <img src="https://images.pexels.com/photos/6801874/pexels-photo-6801874.jpeg" alt="Federal Reserve Building">
+                        </div>
+
+                        <div class="content-body">
+                            <h2>Executive Summary</h2>
+                            <p>The Federal Reserve's latest policy announcement has sent ripples through financial markets, with significant implications for both institutional and retail investors. This comprehensive analysis examines the immediate and long-term effects of the central bank's decision on various asset classes.</p>
+
+                            <h3>Key Market Reactions</h3>
+                            <div class="market-data-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Asset Class</th>
+                                            <th>Immediate Impact</th>
+                                            <th>1-Week Change</th>
+                                            <th>Outlook</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>S&P 500</td>
+                                            <td class="positive">+2.3%</td>
+                                            <td class="positive">+4.1%</td>
+                                            <td>Bullish</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Technology Stocks</td>
+                                            <td class="positive">+3.7%</td>
+                                            <td class="positive">+6.2%</td>
+                                            <td>Very Bullish</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10-Year Treasury</td>
+                                            <td class="negative">-0.8%</td>
+                                            <td class="negative">-1.2%</td>
+                                            <td>Neutral</td>
+                                        </tr>
+                                        <tr>
+                                            <td>USD Index</td>
+                                            <td class="negative">-1.1%</td>
+                                            <td class="negative">-2.3%</td>
+                                            <td>Bearish</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <h3>Sector Analysis</h3>
+                            <p>The technology sector has emerged as the primary beneficiary of the Federal Reserve's accommodative stance. Growth stocks, particularly those in the software and semiconductor industries, have seen substantial gains as lower interest rate expectations reduce the discount rate applied to future cash flows.</p>
+
+                            <div class="chart-placeholder">
+                                <img src="https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg" alt="Market Chart Analysis">
+                            </div>
+
+                            <h3>Investment Implications</h3>
+                            <p>For institutional investors, the current environment presents both opportunities and risks. While equity valuations have become more attractive relative to fixed income, concerns about inflation persistence remain elevated.</p>
+
+                            <blockquote>
+                                "The Federal Reserve's measured approach to monetary policy provides a foundation for sustained economic growth while maintaining price stability." - Jerome Powell, Fed Chairman
+                            </blockquote>
+
+                            <h3>Looking Forward</h3>
+                            <p>Market participants should monitor upcoming economic data releases, particularly employment figures and inflation indicators, as these will likely influence the Federal Reserve's future policy trajectory.</p>
+
+                            <div class="stats-grid">
+                                <div class="stat-card">
+                                    <div class="stat-number">2.1%</div>
+                                    <div class="stat-label">Current Fed Rate</div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-number">3.2%</div>
+                                    <div class="stat-label">Core Inflation</div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-number">4.8%</div>
+                                    <div class="stat-label">GDP Growth</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="about" class="page">
+            <div class="container">
+                <div class="about-content">
+                    <h1 class="page-title">About LaVue Market</h1>
+                    <div class="about-intro">
+                        <p class="lead">LaVue Market is a premier financial information platform dedicated to providing institutional-quality market data and analysis to individual investors and financial professionals.</p>
+                    </div>
+                    <div class="about-grid">
+                        <div class="about-section">
+                            <h2>Our Mission</h2>
+                            <p>We democratize access to professional-grade financial intelligence, empowering investors to make informed decisions with real-time market data and expert analysis.</p>
+                        </div>
+                        <div class="about-section">
+                            <h2>Our Expertise</h2>
+                            <p>Our team of seasoned financial analysts and market experts brings decades of Wall Street experience to deliver actionable insights and comprehensive market coverage.</p>
+                        </div>
+                        <div class="about-section">
+                            <h2>Our Technology</h2>
+                            <p>Built on cutting-edge technology infrastructure, our platform delivers real-time market data with institutional-grade reliability and performance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="page">
+            <div class="container">
+                <h1 class="page-title">Contact Us</h1>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2>Get in Touch</h2>
+                        <p>Have questions about our services or need assistance with your account? Our team is here to help.</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i data-lucide="mail"></i>
+                                <span>contact@lavuemarket.eu</span>
+                            </div>
+                            <div class="contact-item">
+                                <i data-lucide="phone"></i>
+                                <span>+1 (555) 123-4567</span>
+                            </div>
+                            <div class="contact-item">
+                                <i data-lucide="map-pin"></i>
+                                <span>New York, NY 10001</span>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="privacy" class="page">
+            <div class="container">
+                <h1 class="page-title">Privacy Policy</h1>
+                <div class="legal-content">
+                    <p class="last-updated">Last updated: March 15, 2025</p>
+                    
+                    <h2>Information We Collect</h2>
+                    <p>LaVue Market collects information you provide directly to us, such as when you create an account, subscribe to our newsletter, or contact us for support.</p>
+                    
+                    <h2>How We Use Your Information</h2>
+                    <p>We use the information we collect to provide, maintain, and improve our services, communicate with you, and comply with legal obligations.</p>
+                    
+                    <h2>Information Sharing</h2>
+                    <p>We do not sell, trade, or otherwise transfer your personal information to third parties without your consent, except as described in this policy.</p>
+                    
+                    <h2>Data Security</h2>
+                    <p>We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.</p>
+                    
+                    <h2>Contact Information</h2>
+                    <p>If you have questions about this Privacy Policy, please contact us at privacy@lavuemarket.eu.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="terms" class="page">
+            <div class="container">
+                <h1 class="page-title">Terms of Service</h1>
+                <div class="legal-content">
+                    <p class="last-updated">Last updated: March 15, 2025</p>
+                    
+                    <h2>Acceptance of Terms</h2>
+                    <p>By accessing and using LaVue Market, you accept and agree to be bound by the terms and provision of this agreement.</p>
+                    
+                    <h2>Use License</h2>
+                    <p>Permission is granted to temporarily download one copy of the materials on LaVue Market's website for personal, non-commercial transitory viewing only.</p>
+                    
+                    <h2>Disclaimer</h2>
+                    <p>The information on this website is provided for general informational purposes only and should not be considered as financial advice.</p>
+                    
+                    <h2>Limitations</h2>
+                    <p>In no event shall LaVue Market or its suppliers be liable for any damages arising out of the use or inability to use the materials on our website.</p>
+                    
+                    <h2>Governing Law</h2>
+                    <p>These terms and conditions are governed by and construed in accordance with the laws of the United States.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>LaVue Market</h3>
+                    <p>Professional financial intelligence for informed investment decisions.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#articles">Articles</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Stay updated with the latest market insights.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LaVue Market. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/index.js"></script>
+</body>
+</html>
